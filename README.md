@@ -51,8 +51,7 @@ def get_winners(season, num_round):
     return winners
 
 
-# test = get_winners(2008, 1)
-# print(test)
+
 
 
 
