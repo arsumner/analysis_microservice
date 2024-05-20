@@ -34,7 +34,7 @@ import zmq
  socket.connect("tcp://localhost:5623")
 
 
- def get_winners(season, num_round):
+ # def get_winners(season, num_round):
     """
     Test function to get winners of a race in JSON format from microservice.
     Must be passed the particular season/round that the microservice will return the winners for.
