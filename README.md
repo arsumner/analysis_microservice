@@ -4,19 +4,19 @@ To REQUEST data from this microservice:
 
 1. Ensure that pyzmq is installed and imported into your program with the following import statement:
 
-     import zmq
+     # import zmq
 
 2. Connect to the zmq socket:
    
-   context = zmq.Context()
-   socket = context.socket(zmq.REQ)
-   socket.connect("tcp://localhost:xxxx")
+   # context = zmq.Context()
+   # socket = context.socket(zmq.REQ)
+   # socket.connect("tcp://localhost:xxxx")
 
   Connect to a local host port or another port that you define in the client (main program) and the server (microservice).
 
 3. Input sent to microservice is in JSON dictionary format:
 
-   { "season: season, "round": num_round) where season represents year and round represents round in that specified year
+   # { "season: season, "round": num_round) where season represents year and round represents round in that specified year
    
 
 To RECEIVE data from the microservice you:
@@ -29,12 +29,12 @@ TEST PROGRAM:
 import zmq
 
 # ZeroMQ client connection
-context = zmq.Context()
-socket = context.socket(zmq.REQ)
-socket.connect("tcp://localhost:5623")
+# context = zmq.Context()
+# socket = context.socket(zmq.REQ)
+# socket.connect("tcp://localhost:5623")
 
 
-def get_winners(season, num_round):
+# def get_winners(season, num_round):
     """
     Test function to get winners of a race in JSON format from microservice.
     Must be passed the particular season/round that the microservice will return the winners for.
